@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio</title>
+  <meta name="description" content="Portofolio mahasiswa Sistem Informasi Bisnis.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#proyek">Langsung ke proyek</a>
+
+  <header class="nav">
+    <a class="brand" href="#top" id="brand"></a>
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#perjalanan">Perjalanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-role" id="role"></p>
+        <h1 id="name"></h1>
+        <p class="hero-intro" id="intro"></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#proyek">Lihat proyek</a>
+          <a class="btn" id="cv-link" href="#" target="_blank" rel="noopener">Unduh CV</a>
+        </div>
+      </div>
+
+      <!-- Alur kerja: activity diagram mini, elemen utama halaman -->
+      <figure class="flow" aria-label="Alur kerja saya dari analisis sampai deploy">
+        <svg viewBox="0 0 360 440" role="img" aria-hidden="true">
+          <g class="flow-lines" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M180 40 V84"/>
+            <path d="M180 124 V168"/>
+            <path d="M180 208 V252"/>
+            <path d="M180 292 V336"/>
+            <path d="M180 376 V400" />
+          </g>
+          <circle cx="180" cy="28" r="12" class="n-start"/>
+          <g class="n-step"><rect x="80" y="84" width="200" height="40" rx="20"/><text x="180" y="109" text-anchor="middle">Analisis kebutuhan</text></g>
+          <g class="n-step"><rect x="80" y="168" width="200" height="40" rx="20"/><text x="180" y="193" text-anchor="middle">Rancang diagram</text></g>
+          <g class="n-step"><rect x="80" y="252" width="200" height="40" rx="20"/><text x="180" y="277" text-anchor="middle">Bangun sistem</text></g>
+          <g class="n-step"><rect x="80" y="336" width="200" height="40" rx="20"/><text x="180" y="361" text-anchor="middle">Uji dan deploy</text></g>
+          <g class="n-end"><circle cx="180" cy="412" r="12"/><circle cx="180" cy="412" r="6"/></g>
+        </svg>
+      </figure>
+    </section>
+
+    <section id="tentang" class="block">
+      <h2>Tentang saya</h2>
+      <div class="about">
+        <p id="about-text"></p>
+        <dl id="facts"></dl>
+      </div>
+    </section>
+
+    <section id="keahlian" class="block">
+      <h2>Keahlian</h2>
+      <div class="skills" id="skills"></div>
+    </section>
+
+    <section id="proyek" class="block">
+      <h2>Proyek</h2>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <section id="perjalanan" class="block">
+      <h2>Perjalanan</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section id="kontak" class="block contact">
+      <h2>Ayo berkolaborasi</h2>
+      <p id="contact-text"></p>
+      <ul class="links" id="links"></ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p id="footer"></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
