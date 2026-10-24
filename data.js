@@ -42,10 +42,14 @@ window.PORTFOLIO = {
     }
   ],
 
-  // Gambar sertifikat: simpan di assets/certificates/ (format .jpg atau .png)
+  // Gambar sertifikat: simpan di assets/certificates/ 
   certificates: [
-    { title: "Sertifikat Latihan Keterampilan Manajemen Mahasiswa Tingkat Dasar XXXIII Tahun 2024", issuer: "UNIT KEGIATAN MAHASISWA PENDIDIKAN DAN PENALARA", year: "2024", image: "assets/certificates/sertifikat-1.pdf" },
-    { title: "Sertifikat TRAINING PUBLIC SPEAKING", issuer: "BEM Fakultas Ekonomi dan Bisnis Universitas Muhammadiyah Malang ", year: "2025", image: "assets/certificates/sertifikat-2.pdf" }
+    { title: "Sertifikat TRAINING PUBLIC SPEAKING", issuer: "BEM Fakultas Ekonomi dan Bisnis Universitas Muhammadiyah Malang ", year: "2025", image: "assets/certificates/sertifikat-2.pdf" },
+    { title: "Sertifikat Seminar Nasional Himpunan Mahasiswa Teknologi Informasi Politeknik Negeri Malang Tahun 2025 dengan tema “Smart Solutions for a Sustainable Future Economy: Integrating Artificial Intelligence into the Modern Business World” ", issuer: "Himpunan Mahasiswa Teknologi Informasi Politeknik Negeri Malang", year: "2025", image: "assets/certificates/sertifikat-3.pdf" },
+    { title: "Sertifikat Webinar Skill-Development ", issuer: "FESt Management", year: "2025", image: "assets/certificates/sertifikat-4.pdf" },
+    { title: "Sertifikat Acara Future Entrepreneur Summit 2025 ", issuer: " FESt Management berkolaborasi dengan BEM Fakultas Ekonomi dan Bisnis Universitas Muhammadiyah Malang", year: "2025", image: "assets/certificates/sertifikat-5.pdf" },
+    { title: "Sertifikat KOMPETISI IDE BISNIS TINGKAT NASIONAL", issuer: "Future Entrepreneur Summit", year: "2024", image: "assets/certificates/sertifikat-6.pdf" },{ title: "Sertifikat Latihan Keterampilan Manajemen Mahasiswa Tingkat Dasar XXXIII Tahun 2024", issuer: "UNIT KEGIATAN MAHASISWA PENDIDIKAN DAN PENALARAN", year: "2024", image: "assets/certificates/sertifikat-1.pdf" }
+
   ],
 
   timeline: [
