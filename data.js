@@ -67,7 +67,7 @@ window.PORTFOLIO = {
 
   contact: "Hubungi saya melalui email atau media sosial.",
   links: [
-    { label: "Email", url: "mailto:emailanda@example.com", text: "naylaannora@gmail.com" },
+    { label: "Email", url: "mailto:naylaannora@gmail.com", text: "naylaannora@gmail.com" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/nayla-annora-nobel-widyonarko-960553322/", text: "linkedin.com/in/nayla-annora" },
     { label: "GitHub", url: "https://github.com/nowrAaa/", text: "github.com/nowrAaa" }
   ],
