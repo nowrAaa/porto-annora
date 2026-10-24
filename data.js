@@ -26,19 +26,25 @@ window.PORTFOLIO = {
   projects: [
     {
       title: "PetLink",
-      image: "assets/projects/petlink.png",
+      image: "assets/projects/petlink-1.png",
       imageAlt: "Tampilan aplikasi PetLink",
       meta: "Aplikasi mobile, 2026",
-      desc: "Platform layanan kesehatan hewan yang menghubungkan pemilik hewan dengan dokter dan klinik. Menyusun Software Requirement Specification (SRS) dan membuat Use Case Diagram, Activity Diagram, Sequence Diagram, dan Flow Sistem untuk peran customer, klinik, dokter, dan admin. Mendesain UI aplikasi mobile dan website di Figma. Mengimplementasikan desain Figma ke Flutter, termasuk fitur Profil Hewan, Booking Klinik, dan Riwayat Konsultasi. Melakukan Black Box Testing bersama tim",
-      tags: ["Mobile", "Flutter" ],
+      desc: "Platform layanan kesehatan hewan yang menghubungkan pemilik hewan dengan dokter dan klinik.",
+      tags: ["Flutter", "Dart", "Firebase"],
+      links: [
+        { label: "GitHub", url: "https://github.com/daffaputra09/pbl-petlink-mobile-app"},
+        { label: "Website", url: "https://petlink-app.vercel.app/"}, ]
     },
     {
       title: "Website Lab Business Analyst JTI Polinema",
       image: "assets/projects/lab-ba.png",
       imageAlt: "Tampilan website Lab Business Analyst",
       meta: "Website, 2025",
-      desc: " Website profil dan CMS untuk Lab Business Analyst Jurusan Teknologi Informasi Polinema . Membuat Use Case Diagram, Context Diagram, Activity Diagram, dan Sequence Diagram untuk landing page dan CMS, serta menyusun dokumentasi dan requirement sistem. Mendesain UI landing page, CMS, form, dan modal interaktif. Mengembangkan komponen navbar dan halaman home dengan HTML, CSS, Bootstrap, dan JavaScript. Melakukan functional testing dan user acceptance testing.",
-      tags: ["Web", "HTML", "CSS", "JavaScript"],
+      desc: " Website profil dan CMS untuk Lab Business Analyst Jurusan Teknologi Informasi Polinema.",
+      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      links: [
+        { label: "GitHub", url: "https://github.com/nideeuw/LAB-BA"},]
+
     }
   ],
 
@@ -62,9 +68,9 @@ window.PORTFOLIO = {
   contact: "Hubungi saya melalui email atau media sosial.",
   links: [
     { label: "Email", url: "mailto:emailanda@example.com", text: "naylaannora@gmail.com" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/nayla-annora-nobel-widyonarko-960553322/", text: "linkedin.com/in/nayla-annora-nobel-widyonarko-960553322" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/nayla-annora-nobel-widyonarko-960553322/", text: "linkedin.com/in/nayla-annora" },
     { label: "GitHub", url: "https://github.com/nowrAaa/", text: "github.com/nowrAaa" }
   ],
 
-  footer: "2026 © Nayla Annora Nobel Widyonarko."
+  footer: ""
 };

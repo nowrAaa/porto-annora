@@ -9,7 +9,6 @@
   };
 
   document.title = d.name + " | Portofolio";
-  $("brand").textContent = d.name.split(" ")[0];
   $("name").textContent = d.name;
   $("role").textContent = d.role;
   $("intro").textContent = d.intro;
