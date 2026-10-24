@@ -38,12 +38,21 @@
     const head = el("div", "project-head");
     head.append(el("h3", null, p.title), el("p", "meta", p.meta));
     const body = el("div", "project-body");
+    if (p.image) {
+      const fig = el("figure", "shot");
+      const img = el("img");
+      img.src = p.image; img.alt = p.imageAlt || p.title; img.loading = "lazy";
+      img.addEventListener("error", () => fig.remove());
+      img.addEventListener("click", () => openBox(p.image, p.imageAlt || p.title));
+      fig.append(img);
+      body.append(fig);
+    }
     body.append(el("p", null, p.desc));
     const tags = el("ul", "tags");
-    p.tags.forEach((t) => tags.append(el("li", null, t)));
+    (p.tags || []).forEach((t) => tags.append(el("li", null, t)));
     body.append(tags);
     const links = el("div", "project-links");
-    p.links.forEach((l) => {
+    (p.links || []).forEach((l) => {
       const a = el("a", null, l.label);
       a.href = l.url;
       if (l.url.startsWith("http")) { a.target = "_blank"; a.rel = "noopener"; }
@@ -53,6 +62,51 @@
     art.append(head, body);
     $("projects").append(art);
   });
+
+  const box = $("lightbox");
+  function openBox(src, caption) {
+    const isPdf = /\.pdf$/i.test(src);
+    const img = $("lightbox-img"), frame = $("lightbox-pdf"), open = $("lightbox-open");
+    img.hidden = isPdf;
+    frame.hidden = !isPdf;
+    open.hidden = !isPdf;
+    if (isPdf) {
+      frame.src = src + "#view=FitH";
+      open.href = src;
+      img.removeAttribute("src");
+    } else {
+      img.src = src;
+      img.alt = caption;
+      frame.removeAttribute("src");
+    }
+    $("lightbox-caption").textContent = caption;
+    box.showModal();
+  }
+  box.addEventListener("close", () => $("lightbox-pdf").removeAttribute("src"));
+  $("lightbox-close").addEventListener("click", () => box.close());
+  box.addEventListener("click", (e) => { if (e.target === box) box.close(); });
+
+  (d.certificates || []).forEach((c) => {
+    const isPdf = /\.pdf$/i.test(c.image);
+    const caption = c.title + " (" + c.issuer + ", " + c.year + ")";
+    let card;
+    if (isPdf) {
+      card = el("button", "cert");
+      card.type = "button";
+      card.append(el("span", "cert-pdf", "PDF"));
+    } else {
+      card = el("button", "cert");
+      card.type = "button";
+      const img = el("img");
+      img.src = c.image; img.alt = "Sertifikat " + c.title; img.loading = "lazy";
+      img.addEventListener("error", () => card.remove());
+      card.append(img);
+    }
+    card.addEventListener("click", () => openBox(c.image, caption));
+    card.append(el("strong", null, c.title), el("span", null, c.issuer + ", " + c.year));
+    $("certs").append(card);
+  });
+  if (!$("certs").children.length) $("sertifikat").remove();
 
   d.timeline.forEach((t) => {
     const li = el("li");

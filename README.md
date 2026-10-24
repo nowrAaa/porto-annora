@@ -4,7 +4,13 @@ Website portofolio statis (HTML, CSS, JavaScript). Tanpa build, tanpa dependensi
 
 ## Cara mengubah isi
 Edit `data.js`: nama, deskripsi, keahlian, proyek, perjalanan, dan kontak.
-Ganti teks yang diawali tanda kurung siku `[ ... ]`. Letakkan `cv.pdf` di folder yang sama.
+Ganti teks yang diawali tanda kurung siku `[ ... ]`.
+
+## Letak file
+- CV: `assets/cv.pdf`
+- Gambar proyek: `assets/projects/` (sesuaikan nama di field `image` pada `data.js`)
+- Gambar sertifikat: `assets/certificates/` (daftar di `certificates` pada `data.js`)
+Gunakan nama file huruf kecil tanpa spasi, misalnya `petlink.png`. Gambar yang tidak ditemukan akan disembunyikan otomatis.
 
 ## Coba di komputer
 Buka `index.html` di browser, atau jalankan `npx serve .`

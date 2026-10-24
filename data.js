@@ -7,10 +7,10 @@ window.PORTFOLIO = {
   role: "Mahasiswa Sistem Informasi Bisnis",
   intro:
     "Saya merancang dan membangun sistem informasi yang membuat proses bisnis lebih rapi, mulai dari analisis kebutuhan sampai aplikasi yang bisa dipakai.",
-  cv: "cv.pdf", // taruh file cv.pdf di folder yang sama, atau ganti dengan link
+  cv: "assets/CV - Nayla Annora Nobel Widyonarko.pdf", // taruh file CV di folder assets/ dengan nama cv.pdf
 
   about:
-    "Saya mahasiswa D4 Sistem Informasi Bisnis di Politeknik Negeri Malang. Saya suka menerjemahkan masalah operasional menjadi rancangan sistem yang jelas, lalu mewujudkannya dalam aplikasi. [Tambahkan satu atau dua kalimat tentang minat dan tujuan karier Anda.]",
+    "Mahasiswa D-IV Sistem Informasi Bisnis yang sedang belajar menganalisis sistem, pengembangan website, dan pengembangan aplikasi mobile. Memiliki ketertarikan dan keterampilan teknis dalam perancangan arsitektur sistem, pemodelan proses bisnis, serta pembangunan aplikasi web menggunakan teknologi modern.",
   facts: [
     { label: "Kampus", value: "Politeknik Negeri Malang" },
     { label: "Jurusan", value: "Teknologi Informasi" },
@@ -20,39 +20,47 @@ window.PORTFOLIO = {
 
   skills: [
     { group: "Analisis dan perancangan", items: ["Use case diagram", "Activity diagram", "Sequence diagram", "ERD", "Analisis kebutuhan"] },
-    { group: "Pengembangan", items: ["HTML dan CSS", "JavaScript", "[Bahasa/framework lain]", "Git dan GitHub"] },
-    { group: "Basis data dan tools", items: ["MySQL", "Figma", "Vercel", "[Tools lain]"] }
+    { group: "Pengembangan", items: ["HTML dan CSS", "JavaScript", "Flutter", "Git dan GitHub"] },
   ],
 
   projects: [
     {
       title: "PetLink",
+      image: "assets/projects/petlink.png",
+      imageAlt: "Tampilan aplikasi PetLink",
       meta: "Aplikasi mobile, 2026",
-      desc: "[Tulis satu atau dua kalimat: masalah yang diselesaikan, peran Anda, dan hasilnya.]",
-      tags: ["Mobile", "[Teknologi]"],
-      links: [{ label: "Kode sumber", url: "#" }]
+      desc: "Platform layanan kesehatan hewan yang menghubungkan pemilik hewan dengan dokter dan klinik. Menyusun Software Requirement Specification (SRS) dan membuat Use Case Diagram, Activity Diagram, Sequence Diagram, dan Flow Sistem untuk peran customer, klinik, dokter, dan admin. Mendesain UI aplikasi mobile dan website di Figma. Mengimplementasikan desain Figma ke Flutter, termasuk fitur Profil Hewan, Booking Klinik, dan Riwayat Konsultasi. Melakukan Black Box Testing bersama tim",
+      tags: ["Mobile", "Flutter" ],
     },
     {
       title: "Website Lab Business Analyst JTI Polinema",
+      image: "assets/projects/lab-ba.png",
+      imageAlt: "Tampilan website Lab Business Analyst",
       meta: "Website, 2025",
-      desc: "[Tulis satu atau dua kalimat: masalah yang diselesaikan, peran Anda, dan hasilnya.]",
-      tags: ["Web", "[Teknologi]"],
+      desc: " Website profil dan CMS untuk Lab Business Analyst Jurusan Teknologi Informasi Polinema . Membuat Use Case Diagram, Context Diagram, Activity Diagram, dan Sequence Diagram untuk landing page dan CMS, serta menyusun dokumentasi dan requirement sistem. Mendesain UI landing page, CMS, form, dan modal interaktif. Mengembangkan komponen navbar dan halaman home dengan HTML, CSS, Bootstrap, dan JavaScript. Melakukan functional testing dan user acceptance testing.",
+      tags: ["Web", "HTML", "CSS", "JavaScript"],
     }
   ],
 
+  // Gambar sertifikat: simpan di assets/certificates/ (format .jpg atau .png)
+  certificates: [
+    { title: "Sertifikat Latihan Keterampilan Manajemen Mahasiswa Tingkat Dasar XXXIII Tahun 2024", issuer: "UNIT KEGIATAN MAHASISWA PENDIDIKAN DAN PENALARA", year: "2024", image: "assets/certificates/sertifikat-1.pdf" },
+    { title: "Sertifikat TRAINING PUBLIC SPEAKING", issuer: "BEM Fakultas Ekonomi dan Bisnis Universitas Muhammadiyah Malang ", year: "2025", image: "assets/certificates/sertifikat-2.pdf" }
+  ],
+
   timeline: [
-    { when: "2024", title: "Mulai kuliah D4 Sistem Informasi Bisnis", text: "Politeknik Negeri Malang, Jurusan Teknologi Informasi." },
-    { when: "2025", title: "Website Lab Business Analyst", text: "[Ubah: peran dan kontribusi Anda.]" },
-    { when: "2026", title: "PetLink dan sistem laundry", text: "[Ubah: pencapaian atau pelajaran penting.]" }
+    { when: "2024 - Sekarang", title: "Politeknik Negeri Malang", text: "D-IV Sistem Informasi Sistem" },
+    { when: "2021-2024", title: "SMAN 6 Malang", text: "Ilmu Pengetahuan Sosial" },
+    { when: "2018-2021", title: "Mts Khadijah Malang" },
+    { when: "2012-2018", title: "SD Kartika 47 Malang" }
   ],
 
-  contact: {
+  contact: "Hubungi saya melalui email atau media sosial.",
   links: [
-    { label: "Email", url: "mailto:emailanda@example.com", text: "naylaannor@gmail.com" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/username", text: "https://www.linkedin.com/in/nayla-annora-nobel-widyonarko-960553322/" },
-    { label: "GitHub", url: "https://github.com/username", text: "https://github.com/nowrAaa/" }
+    { label: "Email", url: "mailto:emailanda@example.com", text: "naylaannora@gmail.com" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/nayla-annora-nobel-widyonarko-960553322/", text: "linkedin.com/in/nayla-annora-nobel-widyonarko-960553322" },
+    { label: "GitHub", url: "https://github.com/nowrAaa/", text: "github.com/nowrAaa" }
   ],
 
-  footer: "2026 &copy; Nayla Annora Nobel Widyonarko."
-}
-}
+  footer: "2026 © Nayla Annora Nobel Widyonarko."
+};
