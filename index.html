@@ -5,85 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portofolio</title>
   <meta name="description" content="Portofolio mahasiswa Sistem Informasi Bisnis.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#proyek">Langsung ke proyek</a>
 
   <header class="nav">
-    <nav aria-label="Navigasi utama">
-      <a href="#tentang">Tentang</a>
-      <a href="#keahlian">Keahlian</a>
-      <a href="#proyek">Proyek</a>
-      <a href="#sertifikat">Sertifikat</a>
-      <a href="#pendidikan">Pendidikan</a>
-      <a href="#kontak">Kontak</a>
-    </nav>
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Kembali ke atas">
+        <span class="brand-mark" id="initials"></span>
+        <span class="brand-name" id="brand-name"></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span class="sr">Menu</span>
+      </button>
+      <nav id="nav-menu" aria-label="Navigasi utama">
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#sertifikat">Sertifikat</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a class="nav-cta" href="#kontak">Kontak</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
+    <!-- ================= HERO ================= -->
     <section class="hero">
       <div class="hero-text">
-        <p class="hero-role" id="role"></p>
+        <p class="hello"><span aria-hidden="true">👋</span> Halo, saya</p>
         <h1 id="name"></h1>
+        <p class="hero-role" id="role"></p>
         <p class="hero-intro" id="intro"></p>
         <div class="hero-actions">
-          <a class="btn primary" href="#proyek">Lihat proyek</a>
-          <a class="btn" id="cv-link" href="#" target="_blank" rel="noopener">Unduh CV</a>
+          <a class="btn primary" href="#proyek">Lihat proyek
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a class="btn ghost" id="cv-link" href="#" target="_blank" rel="noopener">Unduh CV
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+          </a>
+        </div>
+        <dl class="stats" id="stats"></dl>
+      </div>
+
+      <!-- Foto diri: isi field `photo` di data.js. Selama kosong, placeholder di bawah yang tampil. -->
+      <div class="hero-visual">
+        <div class="photo-blob" aria-hidden="true"></div>
+        <figure class="photo" id="photo">
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="44" r="22"/>
+              <path d="M18 116c0-24 18.8-42 42-42s42 18 42 42Z"/>
+            </svg>
+            <span>Foto profil</span>
+          </div>
+        </figure>
+        <p class="chip chip-a" id="chip-a"></p>
+        <p class="chip chip-b" id="chip-b"></p>
+        <div class="spin" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <defs><path id="circle" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs>
+            <text><textPath href="#circle" id="spin-text" textLength="236" lengthAdjust="spacing"></textPath></text>
+          </svg>
+          <span>✦</span>
         </div>
       </div>
-
     </section>
 
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee"></div>
+    </div>
+
+    <!-- ================= TENTANG ================= -->
     <section id="tentang" class="block">
-      <h2>Tentang saya</h2>
+      <header class="block-head reveal">
+        <p class="eyebrow">Tentang saya</p>
+        <h2>Kenalan singkat</h2>
+      </header>
       <div class="about">
-        <p id="about-text"></p>
-        <dl id="facts"></dl>
+        <p class="about-text reveal" id="about-text"></p>
+        <dl class="facts" id="facts"></dl>
       </div>
     </section>
 
+    <!-- ================= KEAHLIAN ================= -->
     <section id="keahlian" class="block">
-      <h2>Keahlian</h2>
+      <header class="block-head reveal">
+        <p class="eyebrow">Keahlian</p>
+        <h2>Yang bisa saya kerjakan</h2>
+      </header>
       <div class="skills" id="skills"></div>
     </section>
 
+    <!-- ================= PROYEK ================= -->
     <section id="proyek" class="block">
-      <h2>Proyek</h2>
+      <header class="block-head reveal">
+        <p class="eyebrow">Proyek</p>
+        <h2>Karya pilihan</h2>
+      </header>
       <div class="projects" id="projects"></div>
     </section>
 
+    <!-- ================= SERTIFIKAT ================= -->
     <section id="sertifikat" class="block">
-      <h2>Sertifikat</h2>
+      <header class="block-head reveal">
+        <p class="eyebrow">Sertifikat</p>
+        <h2>Pelatihan &amp; pencapaian</h2>
+      </header>
       <div class="certs" id="certs"></div>
     </section>
 
+    <!-- ================= PENDIDIKAN ================= -->
     <section id="pendidikan" class="block">
-      <h2>Pendidikan</h2>
+      <header class="block-head reveal">
+        <p class="eyebrow">Pendidikan</p>
+        <h2>Perjalanan belajar</h2>
+      </header>
       <ol class="timeline" id="timeline"></ol>
     </section>
 
-    <section id="kontak" class="block contact">
-      <h2>Kontak</h2>
-      <p id="contact-text"></p>
+    <!-- ================= KONTAK ================= -->
+    <section id="kontak" class="contact reveal">
+      <div class="contact-text">
+        <p class="eyebrow">Kontak</p>
+        <h2>Mari terhubung!</h2>
+        <p id="contact-text"></p>
+      </div>
       <ul class="links" id="links"></ul>
     </section>
   </main>
 
   <footer class="foot">
     <p id="footer"></p>
+    <a href="#top">Kembali ke atas ↑</a>
   </footer>
 
-  <dialog id="lightbox" aria-label="Pratinjau gambar">
-    <button type="button" id="lightbox-close">Tutup</button>
+  <dialog id="lightbox" aria-label="Pratinjau">
+    <div class="lightbox-bar">
+      <p id="lightbox-caption"></p>
+      <button type="button" id="lightbox-close" aria-label="Tutup">✕</button>
+    </div>
     <img id="lightbox-img" alt="">
     <iframe id="lightbox-pdf" title="Pratinjau PDF" hidden></iframe>
-    <p id="lightbox-caption"></p>
-    <a id="lightbox-open" href="#" target="_blank" rel="noopener" hidden>Buka PDF di tab baru</a>
+    <a id="lightbox-open" href="#" target="_blank" rel="noopener" hidden>Buka PDF di tab baru ↗</a>
   </dialog>
 
   <script src="data.js"></script>

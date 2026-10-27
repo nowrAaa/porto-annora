@@ -8,6 +8,9 @@ window.PORTFOLIO = {
   intro:
     "Saya merancang dan membangun sistem informasi yang membuat proses bisnis lebih rapi, mulai dari analisis kebutuhan sampai aplikasi yang bisa dipakai.",
   cv: "assets/CV - Nayla Annora Nobel Widyonarko.pdf", // taruh file CV di folder assets/ dengan nama cv.pdf
+  // Foto diri untuk bagian hero, misalnya "assets/foto.jpg" (disarankan potret 4:5).
+  // Biarkan kosong ("") untuk menampilkan placeholder.
+  photo: "assets/foto - Nayla Annora Nobel Widyonarko.jpg",
 
   about:
     "Mahasiswa D-IV Sistem Informasi Bisnis yang sedang belajar menganalisis sistem, pengembangan website, dan pengembangan aplikasi mobile. Memiliki ketertarikan dan keterampilan teknis dalam perancangan arsitektur sistem, pemodelan proses bisnis, serta pembangunan aplikasi web menggunakan teknologi modern.",

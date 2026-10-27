@@ -6,6 +6,14 @@ Website portofolio statis (HTML, CSS, JavaScript). Tanpa build, tanpa dependensi
 Edit `data.js`: nama, deskripsi, keahlian, proyek, perjalanan, dan kontak.
 Ganti teks yang diawali tanda kurung siku `[ ... ]`.
 
+## Foto diri
+Simpan foto di `assets/` (misalnya `assets/foto.jpg`, potret 4:5), lalu isi `photo: "assets/foto.jpg"` di `data.js`.
+Selama `photo` kosong, hero menampilkan placeholder.
+
+## Mengganti warna tema
+Buka `style.css`, ubah 5 variabel di blok paling atas (`--primary`, `--on-primary`, `--secondary`, `--ink`, `--bg`).
+Warna turunan lainnya dihitung otomatis. Ada beberapa contoh kombinasi siap pakai di komentar blok tersebut.
+
 ## Letak file
 - CV: `assets/cv.pdf`
 - Gambar proyek: `assets/projects/` (sesuaikan nama di field `image` pada `data.js`)
