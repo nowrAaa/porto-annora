@@ -5,15 +5,13 @@
 window.PORTFOLIO = {
   name: "Nayla Annora Nobel Widyonarko",
   role: "Mahasiswa Sistem Informasi Bisnis",
-  intro:
-    "Saya merancang dan membangun sistem informasi yang membuat proses bisnis lebih rapi, mulai dari analisis kebutuhan sampai aplikasi yang bisa dipakai.",
   cv: "assets/CV - Nayla Annora Nobel Widyonarko.pdf", // taruh file CV di folder assets/ dengan nama cv.pdf
   // Foto diri untuk bagian hero, misalnya "assets/foto.jpg" (disarankan potret 4:5).
   // Biarkan kosong ("") untuk menampilkan placeholder.
   photo: "assets/foto - Nayla Annora Nobel Widyonarko.jpg",
 
   about:
-    "Mahasiswa D-IV Sistem Informasi Bisnis yang sedang belajar menganalisis sistem, pengembangan website, dan pengembangan aplikasi mobile. Memiliki ketertarikan dan keterampilan teknis dalam perancangan arsitektur sistem, pemodelan proses bisnis, serta pembangunan aplikasi web menggunakan teknologi modern.",
+    "Mahasiswa D-IV Sistem Informasi Bisnis yang berfokus pada analisis kebutuhan dan perancangan sistem. Saya terbiasa menggali kebutuhan pengguna, menyusun dokumen SRS, dan memodelkan proses bisnis melalui Use Case, Activity, Sequence, dan ERD. Pengalaman ini saya dapat dari proyek aplikasi mobile PetLink dan website Lab Business Analyst JTI, dimana saya juga mendesain UI di Figma dan mengimplementasikannya, sehingga hasil analisis bisa diterjemahkan menjadi aplikasi yang siap dipakai.",
   facts: [
     { label: "Kampus", value: "Politeknik Negeri Malang" },
     { label: "Jurusan", value: "Teknologi Informasi" },
@@ -23,7 +21,7 @@ window.PORTFOLIO = {
 
   skills: [
     { group: "Analisis dan perancangan", items: ["Use case diagram", "Activity diagram", "Sequence diagram", "ERD", "Analisis kebutuhan"] },
-    { group: "Pengembangan", items: ["HTML dan CSS", "JavaScript", "Flutter", "Git dan GitHub"] },
+    { group: "Pengembangan", items: ["HTML dan CSS", "JavaScript", "Python", "Flutter", "Git dan GitHub"] },
   ],
 
   projects: [
