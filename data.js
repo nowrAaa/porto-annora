@@ -11,7 +11,7 @@ window.PORTFOLIO = {
   photo: "assets/foto - Nayla Annora Nobel Widyonarko.jpg",
 
   about:
-    "Mahasiswa D-IV Sistem Informasi Bisnis Politeknik Negeri Malang yang berfokus pada analisis dan pemodelan sistem serta pengembangan aplikasi web dan mobile. Berpengalaman mengubah kebutuhan pengguna menjadi dokumen SRS, desain UI di Figma, hingga aplikasi yang berjalan, melalui proyek aplikasi mobile PetLink dan website Laboratorium Business Analyst JTI. Terbiasa bekerja dalam tim dan siap berkontribusi sebagai analis sistem maupun pengembang aplikasi.",
+    "Mahasiswa D-IV Sistem Informasi Bisnis yang berfokus pada analisis kebutuhan dan perancangan sistem. Saya terbiasa menggali kebutuhan pengguna, menyusun dokumen SRS, dan memodelkan proses bisnis melalui Use Case, Activity, Sequence, dan ERD. Pengalaman ini saya dapat dari proyek aplikasi mobile PetLink dan website Lab Business Analyst JTI, dimana saya juga mendesain UI di Figma dan mengimplementasikannya, sehingga hasil analisis bisa diterjemahkan menjadi aplikasi yang siap dipakai.",
   facts: [
     { label: "Kampus", value: "Politeknik Negeri Malang" },
     { label: "Jurusan", value: "Teknologi Informasi" },
