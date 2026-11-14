@@ -11,7 +11,7 @@ window.PORTFOLIO = {
   photo: "assets/foto - Nayla Annora Nobel Widyonarko.jpg",
 
   about:
-    "Mahasiswa D-IV Sistem Informasi Bisnis yang berfokus pada analisis kebutuhan dan perancangan sistem. Saya terbiasa menggali kebutuhan pengguna, menyusun dokumen SRS, dan memodelkan proses bisnis melalui Use Case, Activity, Sequence, dan ERD. Pengalaman ini saya dapat dari proyek aplikasi mobile PetLink dan website Lab Business Analyst JTI, dimana saya juga mendesain UI di Figma dan mengimplementasikannya, sehingga hasil analisis bisa diterjemahkan menjadi aplikasi yang siap dipakai.",
+    "Mahasiswa D-IV Sistem Informasi Bisnis Politeknik Negeri Malang yang berfokus pada analisis dan pemodelan sistem serta pengembangan aplikasi web dan mobile. Berpengalaman mengubah kebutuhan pengguna menjadi dokumen SRS, desain UI di Figma, hingga aplikasi yang berjalan, melalui proyek aplikasi mobile PetLink dan website Laboratorium Business Analyst JTI. Terbiasa bekerja dalam tim dan siap berkontribusi sebagai analis sistem maupun pengembang aplikasi.",
   facts: [
     { label: "Kampus", value: "Politeknik Negeri Malang" },
     { label: "Jurusan", value: "Teknologi Informasi" },
@@ -21,7 +21,8 @@ window.PORTFOLIO = {
 
   skills: [
     { group: "Analisis dan perancangan", items: ["Use case diagram", "Activity diagram", "Sequence diagram", "ERD", "Analisis kebutuhan"] },
-    { group: "Pengembangan", items: ["HTML dan CSS", "JavaScript", "Python", "Flutter", "Git dan GitHub"] },
+    { group: "Pengembangan", items: ["HTML dan CSS", "JavaScript", "Dart", "Flutter", "Bootstrap & jQuery", "Git dan GitHub"] },
+    { group: "Database", items: ["MySQL dan PostgreSQL"] },
   ],
 
   projects: [
@@ -31,14 +32,14 @@ window.PORTFOLIO = {
       imageAlt: "Tampilan aplikasi PetLink",
       meta: "Aplikasi mobile, 2026",
       desc: "Platform layanan kesehatan hewan yang menghubungkan pemilik hewan dengan dokter dan klinik.",
-      tags: ["Flutter", "Dart", "Firebase"],
+      tags: ["Flutter", "Dart", "Supabase", "Next.js"],
       links: [
         { label: "GitHub", url: "https://github.com/daffaputra09/pbl-petlink-mobile-app"},
         { label: "Website", url: "https://petlink-app.vercel.app/"}, ]
     },
     {
       title: "Website Lab Business Analyst JTI Polinema",
-      image: "assets/projects/lab-ba.png",
+      image: "assets/projects/lab.png",
       imageAlt: "Tampilan website Lab Business Analyst",
       meta: "Website, 2025",
       desc: " Website profil dan CMS untuk Lab Business Analyst Jurusan Teknologi Informasi Polinema.",
