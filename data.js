@@ -43,7 +43,7 @@ window.PORTFOLIO = {
       imageAlt: "Tampilan website Lab Business Analyst",
       meta: "Website, 2025",
       desc: " Website profil dan CMS untuk Lab Business Analyst Jurusan Teknologi Informasi Polinema.",
-      tags: ["HTML", "CSS", "JavaScript", "PHP","Bootstrap", "PostgreSQL"],
+      tags: ["PHP","Bootstrap", "PostgreSQL"],
       links: [
         { label: "GitHub", url: "https://github.com/nideeuw/LAB-BA"},]
 
