@@ -21,8 +21,8 @@ window.PORTFOLIO = {
 
   skills: [
     { group: "Analisis dan perancangan", items: ["Use case diagram", "Activity diagram", "Sequence diagram", "ERD", "Analisis kebutuhan"] },
-    { group: "Pengembangan", items: ["HTML dan CSS", "JavaScript", "Dart", "Flutter", "Bootstrap & jQuery", "Git dan GitHub"] },
-    { group: "Database", items: ["MySQL dan PostgreSQL"] },
+    { group: "Pengembangan", items: ["HTML dan CSS", "JavaScript", "Dart", "Flutter", "Bootstrap", "jQuery", "Git dan GitHub"] },
+    { group: "Database", items: ["MySQL", "PostgreSQL"] },
   ],
 
   projects: [
