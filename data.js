@@ -5,7 +5,7 @@
 window.PORTFOLIO = {
   name: "Nayla Annora Nobel Widyonarko",
   role: "Mahasiswa Sistem Informasi Bisnis",
-  cv: "assets/CV - Nayla Annora Nobel Widyonarko.pdf", // taruh file CV di folder assets/ dengan nama cv.pdf
+  cv: "assets/CV-Nayla Annora Nobel Widyonarko.pdf", // taruh file CV di folder assets/ dengan nama cv.pdf
   // Foto diri untuk bagian hero, misalnya "assets/foto.jpg" (disarankan potret 4:5).
   // Biarkan kosong ("") untuk menampilkan placeholder.
   photo: "assets/foto - Nayla Annora Nobel Widyonarko.jpg",
